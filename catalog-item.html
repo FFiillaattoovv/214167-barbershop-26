@@ -25,16 +25,16 @@
       </nav>
     </header>
     <main>
-      
+
       <h1>Набор для путешествий «Baxter of California»</h1>
-      
+
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Средства для ухода</a></li>
         <li>Набор для путешествий «Baxter of California»</li>
       </ul>
-      
+
       <section>
         <h2>Изображения товара</h2>
         <p>
@@ -46,7 +46,7 @@
           <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
         </ul>
       </section>
-      
+
       <section>
         <h2>Описание товара</h2>
         <p>Есть в наличии</p>
@@ -85,12 +85,30 @@
         Разработано: <a href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
-    
+
     <section>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <button type="button">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="••••••••">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button type="submit">
+          Войти
+        </button>
+      </form>
     </section>
   </body>
 </html>
